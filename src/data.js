@@ -3,7 +3,7 @@ export const foodData = [
         name: 'Balut',
         description: 'A Filipino delicacy consisting of a fertilized developing egg embryo that is boiled and eaten from the shell.',
         imageUrl: '/balut.jpg',
-        videoUrl: 'balut-cooking.mp4'
+        videoUrl: '/balut-cooking.mp4'
     },
     {
         name: 'Casu Marzu',

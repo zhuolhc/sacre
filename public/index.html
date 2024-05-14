@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>恐怖食物展示网站</title>
+  <title>sacry food sharing</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-******" crossorigin="anonymous" />
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
 </head>
 <body>
 <div id="root"></div>
@@ -19,5 +24,20 @@
 <script src="../src/FoodDetailsPage.js"></script>
 <script src="../src/HomePage.js"></script>
 <script src="../src/i18n.js"></script>
+<h3>Please share your thoughts on scary food in the comments section below.</h3>
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+  init({
+    el: '#waline',
+    serverURL: 'https://review.njopt.tech',
+  });
+</script>
 </body>
+<footer>
+  <div class="footer">
+    <p>© powered by njupt 2024 B14 class</p>
+  </div>
+</footer>
 </html>

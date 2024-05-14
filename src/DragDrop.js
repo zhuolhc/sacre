@@ -11,11 +11,13 @@ const DragDrop = () => {
     const dropAreaRef = useRef(null);
 
     const handleDragStart = (e, food) => {
-        e.dataTransfer.setData('text/plain', JSON.stringify(food));
+        const foodData = JSON.stringify(food);
+        e.dataTransfer.setData('application/json', foodData);
     };
 
     const handleDrop = (e) => {
-        const food = JSON.parse(e.dataTransfer.getData('text/plain'));
+        const foodData = e.dataTransfer.getData('application/json');
+        const food = JSON.parse(foodData);
         const newPosition = { x: e.clientX - dropAreaRef.current.offsetLeft, y: e.clientY - dropAreaRef.current.offsetTop };
         setFoodItems(
             foodItems.map((item) =>
