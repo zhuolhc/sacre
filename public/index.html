@@ -24,7 +24,16 @@
 <script src="../src/FoodDetailsPage.js"></script>
 <script src="../src/HomePage.js"></script>
 <script src="../src/i18n.js"></script>
+<iframe id="bili-radio"
+        src="https://player.bilibili.com/player.html?bvid=BV1ts421P7Yn"
+        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="100%">
+</iframe>
+
 <h3>Please share your thoughts on scary food in the comments section below.</h3>
+<script>
+  document.getElementById("bili-radio").style.height = document.getElementById("bili-radio").scrollWidth * 0.76 + "px";
+</script>
+
 <div id="waline"></div>
 <script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
@@ -37,7 +46,7 @@
 </body>
 <footer>
   <div class="footer">
-    <p>© powered by njupt 2024 B14 class</p>
+    <p>© powered by 2024 njupt B14 class</p>
   </div>
 </footer>
 </html>
