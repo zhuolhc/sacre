@@ -12,6 +12,7 @@ const FoodCard = ({ food }) => {
             <div className="food-card-content">
                 <h3>{t(food.name)}</h3>
                 <p>{t(food.description)}</p>
+
             </div>
         </div>
     );
