@@ -243,3 +243,8 @@ h3{
     /* 其他样式... */
     animation: bounceUp 2s infinite;
 }
+
+.navbar-brand img {
+    width: 25px; /* 设置logo宽度为80px */
+    height: auto; /* 高度自动等比缩放 */
+}

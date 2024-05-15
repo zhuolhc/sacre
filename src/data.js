@@ -49,5 +49,20 @@ export const foodData = [
             '4。出锅后撒少许盐即可',
         imageUrl: '/fried-cicada-monkey.jpg',
         videoUrl: 'fried-cicada-monkey.mp4'
+    },
+    {
+        name: 'haishen',
+        description: 'Sea cucumber is a kind of precious seafood, which is rich in protein, fat, carbohydrate, calcium, phosphorus, iron, iodine, vitamin A, vitamin B1, vitamin B2, niacin, etc. It has the functions of nourishing yin and nourishing blood, moistening dryness and nourishing the stomach. However, the appearance of sea cucumber is not very attractive, and the taste is relatively tasteless. Many foreigners are not used to its taste and appearance, so they are not willing to try it.',
+        des2: '海参是一种珍贵的海产品，富含蛋白质、脂肪、碳水化合物、钙、磷、铁、碘、维生素A、维生素B1、维生素B2、烟酸等，具有滋阴养血、润燥养胃的功效。但是海参的外观并不十分诱人，口感也比较淡，很多外国人不习惯它的味道和外观，因此不愿尝试。',
+        imageUrl: '/haishen.jpg',
+        videoUrl: 'haishen-making.mp4'
+    },
+    {
+        name: 'Live bead',
+        description: 'Live beads are a unique traditional delicacy that originated in Nanjing, China. It is formed during the incubation process of an egg, when the egg is about to hatch into life but is not fully formed. At this time, the eggs already have traces of heads, wings, and feet. This kind of egg hatching that is both a chicken and an egg is called a "living bead." Live beads are not only a famous specialty of Liuhe District, Nanjing City, but also a traditional nourishing delicacy in Jinling.',
+        des2: '活珠子是一种独特的传统美食，最早起源于中国南京。它是在鸡蛋孵化过程中，当鸡蛋即将孵化成生命但又没有完全成形时形成的产物。此时的鸡蛋里面已经有了头、翅膀、脚的痕迹，这种亦鸡亦蛋的鸡蛋孵化物被称为“活珠子”。活珠子不仅是南京市六合区的著名特产，也属于金陵传统滋补类美食。',
+        imageUrl: '/live-bead.jpg',
+        videoUrl: 'live-bead-making.mp4'
     }
+
 ];

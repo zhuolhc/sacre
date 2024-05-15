@@ -10,9 +10,11 @@ import OtherSites from "./OtherSites";
 function App() {
   const { t, i18n } = useTranslation();
   const [isDarkMode, setIsDarkMode] = React.useState(false);
+
   const handleLanguageChange = (lng) => {
     i18n.changeLanguage(lng);
   };
+
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode); // 切换isDarkMode状态
   };
@@ -22,6 +24,7 @@ function App() {
         <div className={`app ${isDarkMode ? 'dark-mode' : ''}`}>
           <nav className="navbar">
             <div className="navbar-brand">
+              <img className="navbar-brand-img" src="/njupt.jpg" alt="Logo" /> {/* 添加 logo 图片 */}
               <Link to="/">{t('siteTitle')}</Link>
             </div>
             <ul className="navbar-nav">
@@ -45,14 +48,12 @@ function App() {
               </li>
             </ul>
           </nav>
-
           <Routes>
-            <Route path="/about" element={<AboutPage/>}/>
-            <Route path="/OtherSites" element={<OtherSites/>}/>
-            <Route path="/food/:foodName" element={<FoodDetailsPage/>}/>
-            <Route path="/" element={<><HomePage/><DragDrop/></>}/>
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/OtherSites" element={<OtherSites />} />
+            <Route path="/food/:foodName" element={<FoodDetailsPage />} />
+            <Route path="/" element={<><HomePage /><DragDrop /></>} />
           </Routes>
-
           <footer className="footer">
             {/* 添加页脚内容 */}
           </footer>
