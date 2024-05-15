@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>scary food sharing</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-******" crossorigin="anonymous" />
   <link
@@ -30,6 +31,7 @@
 </iframe>
 
 <h3>Please share your thoughts on scary food in the comments section below.</h3>
+<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 <script>
   document.getElementById("bili-radio").style.height = document.getElementById("bili-radio").scrollWidth * 0.76 + "px";
 </script>
@@ -41,6 +43,25 @@
   init({
     el: '#waline',
     serverURL: 'https://review.njopt.tech',
+  });
+  // 获取按钮元素
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  // 当页面滚动时检查按钮是否应该显示
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  // 当点击按钮时平滑滚动到页面顶部
+  scrollToTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
 </script>
 </body>

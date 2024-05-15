@@ -17,13 +17,19 @@ const DragDrop = () => {
 
     const handleDrop = (e) => {
         const foodData = e.dataTransfer.getData('application/json');
-        const food = JSON.parse(foodData);
-        const newPosition = { x: e.clientX - dropAreaRef.current.offsetLeft, y: e.clientY - dropAreaRef.current.offsetTop };
-        setFoodItems(
-            foodItems.map((item) =>
-                item.name === food.name ? { ...item, position: newPosition } : item
-            )
-        );
+        console.log('Dropped data:', foodData); // 添加这一行以记录拖放的数据
+
+        if (foodData) { // 检查foodData是否为空或null
+            const food = JSON.parse(foodData);
+            const newPosition = { x: e.clientX - dropAreaRef.current.offsetLeft, y: e.clientY - dropAreaRef.current.offsetTop };
+            setFoodItems(
+                foodItems.map((item) =>
+                    item.name === food.name ? { ...item, position: newPosition } : item
+                )
+            );
+        } else {
+            console.log('Invalid or empty data dropped'); // 添加无效/空数据的消息
+        }
     };
 
     useEffect(() => {
