@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import FoodDetailsPage from './FoodDetailsPage';
 import AboutPage from './AboutPage';
 import DragDrop from './DragDrop';
+import OtherSites from "./OtherSites";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -28,6 +29,9 @@ function App() {
                 <Link to="/about">{t('about')}</Link>
               </li>
               <li className="nav-item">
+                <Link to="/OtherSites">{t('OtherSites')}</Link>
+              </li>
+              <li className="nav-item">
                 <button onClick={() => handleLanguageChange('en')}>English</button>
                 <button onClick={() => handleLanguageChange('zh')}>中文</button>
               </li>
@@ -36,6 +40,7 @@ function App() {
 
           <Routes>
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/OtherSites" element={<OtherSites />} />
             <Route path="/food/:foodName" element={<FoodDetailsPage />} />
             <Route path="/" element={<><HomePage /><DragDrop /></>} />
           </Routes>

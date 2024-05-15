@@ -34,5 +34,20 @@ export const foodData = [
         des2: '燕窝被誉为“东方的美容圣品”，高昂的价格背后是其补充营养、促进细胞再生的珍贵功效。然而，了解到燕窝来源于金丝燕唾液凝固而成后，不少外国人对这种被视为珍 delicacy 的食物感到难以理解和接受，尤其是在文化背景和饮食习惯大相径庭的情况下。',
         imageUrl: '/yanwo.jpg',
         videoUrl: 'yanwo-making.mp4'
+    },
+    {
+        name: 'fried cicada monkey',
+        description: 'The fried cicada monkey is the food of cicada monkey as the main material. Cicada monkey is the larval form of cicada. The way to do it is\n' +
+            '1. Rinse the cicada monkey with water to control water\n' +
+            '2. Put it in the pot to dry, be sure to bake it on a small fire, the fire will be burnt, and the baked tail will expand\n' +
+            '3. Put the oil in the pot, the oil temperature is 80% hot, and the cicada monkey can be poured into it\n' +
+            '4. Sprinkle with a little salt after serving',
+        des2: '蝉蛹是以蝉蛹为主要材料的食品。蝉蛹是蝉的幼虫。这样做的方法是\n' +
+            '1.用水冲洗蝉蛹控水\n' +
+            '2.放进锅里晾干，一定要小火烤，火会烧焦，烤出来的尾巴会膨胀\n' +
+            '3.锅里放油，油温80%热，就可以把蝉蛹倒进去了\n' +
+            '4。出锅后撒少许盐即可',
+        imageUrl: '/fried-cicada-monkey.jpg',
+        videoUrl: 'fried-cicada-monkey.mp4'
     }
 ];
