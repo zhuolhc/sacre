@@ -60,7 +60,7 @@ export const foodData = [
     {
         name: 'Live bead',
         description: 'Live beads are a unique traditional delicacy that originated in Nanjing, China. It is formed during the incubation process of an egg, when the egg is about to hatch into life but is not fully formed. At this time, the eggs already have traces of heads, wings, and feet. This kind of egg hatching that is both a chicken and an egg is called a "living bead." Live beads are not only a famous specialty of Liuhe District, Nanjing City, but also a traditional nourishing delicacy in Jinling.',
-        des2: '活珠子是一种独特的传统美食，最早起源于中国南京。它是在鸡蛋孵化过程中，当鸡蛋即将孵化成生命但又没有完全成形时形成的产物。此时的鸡蛋里面已经有了头、翅膀、脚的痕迹，这种亦鸡亦蛋的鸡蛋孵化物被称为“活珠子”。活珠子不仅是南京市六合区的著名特产，也属于金陵传统滋补类美食。',
+        des2: '活珠子是一种独特的传统美食，最早起源于中国南京。它是在鸡蛋孵化过程中，当鸡蛋即将孵化成生命但又没有完全成形时形成的产物。此时的鸡蛋里面已经有了头、翅膀、脚的痕迹，这种亦鸡亦蛋的鸡蛋孵化物被称为“活珠子”。活珠子不仅是南京市六合区的著名特产，也属于金陵传统滋补类美食。',
         imageUrl: '/live-bead.jpg',
         videoUrl: 'live-bead-making.mp4'
     }
