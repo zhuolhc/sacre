@@ -24,7 +24,7 @@ const FoodDetailsPage = () => {
                 <div className="food-description">
                     <p>{t(food.description)}</p>
                     <p>{t(food.des2)}</p>
-                    <video controls>
+                    <video width="640" height="360" controls>
                         <source src={food.videoUrl} type="video/mp4"/>
                     </video>
                 </div>
