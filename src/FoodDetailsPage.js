@@ -18,10 +18,11 @@ const FoodDetailsPage = () => {
                 <h1>{t(food.name)}</h1>
             </div>
             <div className="food-details-content">
-                <div className="food-image">
-                    <img src={food.imageUrl} alt={food.name} />
-                </div>
+
                 <div className="food-description">
+                    <div className="food-image">
+                        <img src={food.imageUrl} alt={food.name}/>
+                    </div>
                     <p>{t(food.description)}</p>
                     <p>{t(food.des2)}</p>
                     <video width="640" height="360" controls>
